@@ -2,9 +2,9 @@ import React from "react";
 
 function TipCalculator() {
   return (
-    <div className="TipCalculator p-7 grid grid-cols-2 gap-6 rounded-[20px]">
+    <main className="TipCalculator p-7 grid grid-cols-2 gap-6 rounded-[20px]">
       {/*Form inputs */}
-      <div className="p-5 formInputs">
+      <section className="p-5 formInputs">
         <form action="/">
           <label htmlFor="totalBill">Bill</label>
           <div className="inputIcons relative mt-2">
@@ -62,15 +62,43 @@ function TipCalculator() {
               name="totalBill"
               id="totalBill"
               placeholder="0"
-              className="py-2 px-5 text-end"
+              className="py-2 px-5 text-end rounded-md"
             />
           </div>
-          <button type="submit" className="text-white mt-8">
+          <button
+            type="submit"
+            className="text-white mt-8 rounded-md uppercase tracking-wide"
+          >
             Calculate
           </button>
         </form>
-      </div>
-    </div>
+      </section>
+      {/*Display */}
+      <section className="border displayBox rounded-[20px] p-11 m-3">
+        <div className="grid grid-cols-2 gap-y-9 mt-5">
+          <div className=" pt-3">
+            <p className="text-white text-lg">Tip amount</p>
+            <small className=" text-slate-400 text-base">/ person</small>
+          </div>
+          <div>
+            <h2 className="text-7xl text-right">$0.00</h2>
+          </div>
+          <div className="pt-3">
+            <p className="text-white text-lg">Total</p>
+            <small className=" text-slate-400 text-base">/ person</small>
+          </div>
+          <div>
+            <h2 className="text-7xl text-right">$0.00</h2>
+          </div>
+        </div>
+        <button
+          type="submit "
+          className="uppercase p-4 text-xl resetButton mt-[153px] rounded-md tracking-wide"
+        >
+          Reset
+        </button>
+      </section>
+    </main>
   );
 }
 

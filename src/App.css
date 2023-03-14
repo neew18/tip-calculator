@@ -73,3 +73,19 @@ form p {
   padding: 0.7rem;
   border-radius: var(--borderRadiusForBtn);
 }
+
+/*Display*/
+
+.displayBox {
+  background-color: var(--veryDarkCyan);
+}
+
+.displayBox h2 {
+  color: var(--strongCyan);
+}
+
+.resetButton {
+  width: 100%;
+  background-color: var(--strongCyan);
+  color: var(--veryDarkCyan);
+}

@@ -3,6 +3,7 @@ import React from "react";
 function TipCalculator() {
   return (
     <div className="TipCalculator p-7 grid grid-cols-2 gap-6 rounded-[20px]">
+      {/*Form inputs */}
       <div className="p-5 formInputs">
         <form action="/">
           <label htmlFor="totalBill">Bill</label>

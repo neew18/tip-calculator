@@ -2,10 +2,11 @@
   --strongCyan: hsl(172, 67%, 45%);
   --veryDarkCyan: hsl(183, 100%, 15%);
   --darkGrayishCyan: hsl(186, 14%, 43%);
-  --grayishCyan: #7f9c9f;
+  --grayishCyan: hsl(184, 14%, 56%);
   --lightGrayishCyan: hsl(185, 41%, 84%);
   --veryLightGrayishCyan: hsl(189, 41%, 97%);
   --white: hsl(0, 0%, 100%);
+  --borderRadiusForBtn: 0.4rem;
   margin: 0 auto;
 }
 
@@ -39,8 +40,35 @@ form p {
   font-size: 1.2rem;
 }
 
-.inputIcons input {
-  background-color: var(--veryLightGrayishCyan);
+.inputIcons input,
+.formInputs form button {
   width: 100%;
+}
+
+.inputIcons input,
+.buttons input[type="text"] {
+  background-color: var(--veryLightGrayishCyan);
+  font-size: 1.8rem;
+  border: 0.2rem solid transparent;
+  border-radius: var(--borderRadiusForBtn);
+  color: var(--veryDarkCyan);
+}
+
+.inputIcons input:focus,
+.buttons input[type="text"]:focus {
+  border: 0.2rem solid var(--strongCyan);
+  outline: none;
+  caret-color: var(--veryDarkCyan);
+}
+
+.buttons,
+.formInputs form button {
   font-size: 1.5rem;
+}
+
+.buttons button,
+.formInputs form button {
+  background-color: var(--veryDarkCyan);
+  padding: 0.7rem;
+  border-radius: var(--borderRadiusForBtn);
 }

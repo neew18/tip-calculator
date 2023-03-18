@@ -31,7 +31,7 @@ html {
 /*Styles for form inputs*/
 .TipCalculator {
   margin: 0 auto;
-  width: 80rem;
+  max-width: 80rem;
   background-color: var(--white);
 }
 
